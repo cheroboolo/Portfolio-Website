@@ -1,0 +1,284 @@
+@import "bootstrap-social.less";
+p {
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5{
+    padding-bottom: 2rem;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid {
+    padding: 2% 15% 6%;
+
+}
+
+#title {
+    color: white;
+    background-color: #7D9D9C;
+}
+
+#portfolio {
+    padding: 100px;
+    text-align: center;
+    background-color: #F0EBE3;
+}
+
+#about {
+    color: white;
+    background-color: #7D9D9C;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#contact {
+    padding: 7% 30%;
+    background-color: #F0EBE3;
+
+}
+
+.profile{
+    text-align: center;
+
+    background-color: #7D9D9C;
+}
+
+#footer {
+    padding: 3% 15% 1%;
+    background-color: #7D9D9C;
+    text-align: center;
+}
+
+.neo-img {
+    width: 15%;
+    padding-bottom: 5%;
+
+}
+
+.main-text {
+    font-family: 'Sacramento', cursive;
+    font-size: 130px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat-Light';
+  font-size: 1.25rem;
+}
+
+.title-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding-bottom:20px;
+}
+
+
+.container {
+    padding: 100px 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+a {
+    text-decoration:none;
+}
+
+.card {
+    width: 280px;
+    height: 520px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #7D9D9C;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .pic {
+    position: relative
+}
+
+.card .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+.card .text-muted {
+    font-size: 14px;
+    text-align: left;
+}
+
+.card:hover .text-muted {
+    color: #fff !important
+}
+
+.card .content {
+    padding: 0 20px
+}
+
+.card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #1b9ce3;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.card:hover .content .btn {
+    background: #fff;
+    color: #1b9ce3;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+.card .content .btn .fas {
+    font-size: 10px;
+    padding-left: 5px
+}
+
+
+.card .content .foot .icon {
+    font-size: 12px
+}
+
+#portfolio p {
+  color: #8f8f8f;
+}
+
+.portfolio-text {
+    inline-size: 550px;
+    overflow-wrap: break-word;
+
+    margin: auto;
+}
+
+.about-text {
+    margin: 50px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.resume-text {
+    text-align: left;
+    line-height: 2;
+    padding-bottom: 2rem;
+}
+
+.btn-contact{
+    margin-top: 32px;
+}
+.contact-title {
+    padding-bottom: 3.5rem;
+}
+.portfolio-title {
+    padding-bottom: 2.5rem;
+}
+
+.foot-link {
+    color: #fff;
+    margin: 10px 20px 20px;
+}
+
+.foot-link:hover {
+    color: black;
+}
+
+.copy-r {
+    color: #fff;
+    font-family: "Montserrat-Light";
+    font-size: 16px;
+    padding-top: 3.5rem;
+}
+
+.social {
+    color: #fff;
+
+}
+
+.source {
+    color: #fff;
+}
+
